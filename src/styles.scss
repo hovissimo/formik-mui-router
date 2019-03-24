@@ -1,0 +1,28 @@
+.App {
+  font-family: 'roboto';
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-gap: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+nav {
+  grid-column: 1/4;
+  grid-row: 1;
+  background: #efe;
+
+  a {
+    display: block;
+    margin: 10px;
+  }
+}
+
+main {
+  grid-row: 1;
+  grid-column: 4/13;
+  background: #eef;
+}
