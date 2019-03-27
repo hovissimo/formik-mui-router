@@ -1,8 +1,9 @@
 {
   "name": "formik-mui-router",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "keywords": [],
+  "license": "GPL-3.0-only",
   "main": "src/index.js",
   "dependencies": {
     "@material-ui/core": "3.9.2",
