@@ -2,6 +2,9 @@ import React from "react"
 import ReactDOM from "react-dom"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 
+import { Provider } from "react-redux"
+import store from "./store"
+
 import "./styles.scss"
 import AddPerson from "./AddPerson"
 
@@ -42,4 +45,9 @@ function App() {
 }
 
 const rootElement = document.getElementById("root")
-ReactDOM.render(<App />, rootElement)
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement
+)
